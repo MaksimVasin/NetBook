@@ -1,0 +1,44 @@
+// width / height !!!
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+body {
+  text-transform: uppercase;
+}
+
+.visually-hidden {
+  position: absolute;
+  bottom: 0;
+  overflow: hidden;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  white-space: nowrap;
+  clip: rect(0 0 0 0);
+}
+
+li {
+  list-style-type: none;
+}
+
+ul {
+  margin: 0;
+  padding-left: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
