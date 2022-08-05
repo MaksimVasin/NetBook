@@ -4,10 +4,26 @@
   box-sizing: border-box;
 }
 
+a:link {
+  color: #656464;
+}
+
+a:visited {
+  color: #656464;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  color: #656464;
+  background-color: #fff;
+}
 
 img {
-  height: auto;
   max-width: 100%;
+  height: auto;
 }
 
 .visually-hidden {
@@ -47,6 +63,6 @@ p {
 
 .container {
   max-width: 1226px;
+  padding: 0 30px;
   margin: 0 auto;
-  padding: 0 15px;
 }

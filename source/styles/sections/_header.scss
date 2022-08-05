@@ -1,0 +1,139 @@
+.header {
+  background: linear-gradient(311.76deg, #d4e7fe -15.24%, #fff 78.85%);
+
+  &__top-inner {
+    display: flex;
+    min-width: 90px;
+    padding: 24px 0 16px;
+    border-bottom: 1px solid #e5e5e5;
+  }
+}
+
+.menu {
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 16px;
+    margin-left: 73px;
+    text-align: center;
+  }
+
+  &__list-item {
+    margin-right: 32px;
+  }
+
+  &__list_item:last-child {
+    margin-right: 0;
+  }
+
+  &__link {
+    transition: color 0.4s linear;
+  }
+
+  &__list-item_active &__link,
+  &__link:hover {
+    color: #000;
+  }
+}
+
+.logo {
+  margin-top: 6px;
+
+  &__img {
+    min-width: 143px;
+  }
+}
+
+.search {
+  position: relative;
+  margin-top: 3px;
+  margin-left: auto;
+  font-size: 12px;
+  font-weight: regular;
+
+  &__input {
+    width: 105px;
+    padding: 14px 0 14px 18px;
+    background-color: inherit;
+    border: none;
+    border-bottom: 1px solid #e5e5e5;
+    outline: none;
+  }
+
+  &__input:active {
+    bottom: none;
+    outline: none;
+  }
+}
+
+.search::before {
+  position: absolute;
+  top: 15px;
+  left: 0;
+  width: 12px;
+  height: 12px;
+  color: #000;
+  content: "";
+  background: url("../../img/magnifyingGlass.svg");
+}
+
+.autorization {
+  &__btn {
+    margin-left: 42px;
+  }
+}
+
+/* stylelint-disable-next-line no-duplicate-selectors */
+.header {
+  &__content-inner {
+    display: flex;
+    min-height: 656px;
+  }
+
+  &__content-item {
+    position: relative;
+    width: 50%;
+  }
+
+  &__info {
+    position: absolute;
+    top: 19%;
+  }
+
+  &__btn-community {
+    padding: 10px 30px;
+    color: #217bf4;
+    background-color: rgba(#217bf4, 0.1);
+    border: none;
+    border-radius: 8px;
+  }
+
+  &__btn-community:hover {
+    color: #fff;
+    background-color: #217bf4;
+  }
+
+  &__title {
+    margin-top: 22px;
+    font-size: 56px;
+    line-height: 66px;
+  }
+
+  &__text {
+    max-width: 490px;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+  }
+
+  &__btn-content {
+    padding: 22px 42px;
+    margin-top: 40px;
+    font-size: 14px;
+  }
+
+  &__btn-content_first {
+    margin-right: 12px;
+  }
+}

@@ -1,9 +1,19 @@
 /* stylelint-disable scss/at-import-no-partial-leading-underscore */
-
-// global
+/* stylelint-disable-next-line CssSyntaxError */
 /* @import "global/_font.scss"; */
 @import "global/_global.scss";
 @import "global/_variables.scss";
 
 // blocks
+@import "blocks/_text.scss";
 @import "blocks/_button.scss";
+
+// sections
+@import "sections/_header.scss";
+@import "sections/_about_us.scss";
+@import "sections/_our_achievement.scss";
+@import "sections/_features.scss";
+@import "sections/_our_team.scss";
+@import "sections/_cta.scss";
+@import "sections/_blog.scss";
+@import "sections/_footer.scss";

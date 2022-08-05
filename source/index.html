@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles/css/normalize.css">
   <link rel="stylesheet" href="styles/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <title>Netbook</title>
 </head>
 <body>
@@ -15,29 +18,30 @@
         <div class="header__top-inner">
           <div class="logo">
             <a href="#" class="logo__link">
-              <img src="logo__img" alt="Netbook">
+              <img class="logo__img" src="img/logo.svg" alt="Netbook">
             </a>
           </div>
           <nav class="menu">
             <ul class="menu__list">
-              <li class="menu__list-item_active">
-                <a href="" class="menu__link">Home</a>
+              <li class="menu__list-item menu__list-item_active">
+                <a class="menu__link" href="" >Home</a>
               </li>
               <li class="menu__list-item">
-                <a href="" class="menu__link">Community</a>
+                <a class="menu__link" href="" >Community</a>
               </li>
               <li class="menu__list-item">
-                <a href="" class="menu__link">Blog</a>
+                <a class="menu__link" href="" >Blog</a>
               </li>
               <li class="menu__list-item">
-                <a href="" class="menu__link">Events</a>
+                <a class="menu__link" href="" >Events</a>
               </li>
             </ul>
           </nav>
-          <div class="search"></div>
+          <form class="search">
+            <input class="search__input" placeholder="Search here...">
+          </form>
           <div class="autorization">
-            <button class="btn autorization__log-in">Log in</button>
-            <button class="btn autorization__log-out_hidden">Log out</button>
+            <button class="btn autorization__btn">Log in</button>
           </div>
         </div>
       </div>
@@ -45,14 +49,18 @@
     <div class="header__content">
         <div class="container">
           <div class="header__content-inner">
-            <div class="header__info">
-              <button class="header__btn_community">Netbook community</button>
-              <h1 class="title">Your Solutions For Community!</h1>
-              <p class="text">More than 2 billion people in over countries use socibook to stay in touch with friends & family.</p>
-              <button class="btn">About More</button>
-              <button class="btn btm-light">Invite Friend</button>
+            <div class="header__content-item">
+              <div class="header__info">
+                <button class="btn header__btn-community">Netbook community</button>
+                <h1 class="title header__title">Your Solutions For Community!</h1>
+                <p class="text header__text">More than 2 billion people in over countries use socibook to stay in touch with friends & family.</p>
+                <button class="btn header__btn-content header__btn-content_first">About More</button>
+                <button class="btn header__btn-content">Invite Friend</button>
+              </div>
             </div>
-            <img class="header__image" src="img/header-img.svg" alt="">
+            <div class="header__content-item">
+              <img class="header__image" src="img/header-img.svg" width="585" height="501" alt="">
+            </div>   
           </div>
         </div>
     </div>
@@ -60,7 +68,7 @@
   <section class="about-us">
     <div class="container">
       <div class="about-us__inner">
-        <div class="text-content">
+        <div class="text-content about-us__text-content">
           <h2 class="subtitle">Whats Netboks?</h2>
           <h1 class="title">Why Join to Netbook Social Network?</h1>
           <p class="text">Recent surveys have indicated that small businesses recognise the need they have to connect with consumer.</p>
@@ -140,7 +148,7 @@
       </ul>
     </div>
   </section>
-  <section class="out-team">
+  <section class="our-team">
     <div class="container">
       <div class="text-content">
         <h2 class="subtitle">Valuable Team</h2>

@@ -1,3 +1,15 @@
-button {
-  color: #ccc;
+.btn {
+  padding: 17px 42px;
+  font-size: 12px;
+  color: #fff;
+  cursor: pointer;
+  background-color: #217bf4;
+  border: 1px solid #217bf4;
+  border-radius: 14px;
+  transition: background-color 0.4s linear, color 0.4s linear;
+}
+
+.btn:hover {
+  color: #217bf4;
+  background-color: #fff;
 }
