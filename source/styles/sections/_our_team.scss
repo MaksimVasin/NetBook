@@ -1,0 +1,153 @@
+.our-team {
+  padding-top: 10px;
+  margin-top: 108px;
+  margin-bottom: 130px;
+
+  &__members-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-center;
+    margin-top: 44px;
+  }
+
+  &__members-item {
+    width: 23.2%;
+    padding: 30px;
+    margin-right: calc(7.2% / 3);
+    text-align: center;
+    border: 2px solid rgba(#f3f3f3, 0.5);
+    border-radius: 10px;
+    transition: box-shadow 0.3s linear;
+  }
+
+  &__members-item:nth-child(4n) {
+    margin-right: 0;
+  }
+
+  &__members-item:hover {
+    box-shadow: 0 34px 68px rgba(116, 115, 128, 0.1);
+  }
+
+  &__img-item {
+    position: relative;
+    z-index: -1;
+    min-width: 138px;
+    height: 138px;
+    background-color: #e2efff;
+    border-radius: 50%;
+  }
+
+  &__img-border {
+    display: block;
+    width: 166px;
+    height: 171px;
+    padding: 14px;
+    margin: 0 auto;
+    content: "";
+    background-image: url("../../img/border-avatar.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  &__member-name {
+    margin-top: 26px;
+    font-family: 'Inter';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 26px;
+    color: $text-main;
+  }
+
+  &__member-link {
+    display: block;
+    margin-top: 15px;
+    font-family: 'Inter';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    color: $card-link;
+  }
+
+  &__filter {
+    margin: 37px auto 0;
+  }
+}
+
+.members-select {
+  &__filter {
+    position: relative;
+    z-index: 0;
+    display: flex;
+    width: 474px;
+    height: 72px;
+    padding: 8px;
+    background-color: rgba($text-background, 0.06);
+    border-radius: 14px;
+  }
+
+  &__radio-btn input[type="radio"] {
+    display: none;
+  }
+
+  &__radio-btn {
+    margin-right: 4px;
+
+    :last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__radio-btn label {
+    display: inline-block;
+    width: 150px;
+    height: 56px;
+    padding: 0 15px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 56px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    cursor: pointer;
+    user-select: none;
+    border-radius: 14px;
+    transition: color 0.4s linear, transform 0.3s linear;
+    transform: translateY(0);
+  }
+
+  &__radio-btn label:hover {
+    color: #666;
+  }
+
+  &__radio-btn input[type="radio"]:checked + label {
+    color: #fff;
+    transform: translateY(-2px);
+  }
+
+  &__indicator {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    z-index: -1;
+    display: block;
+    width: 150px;
+    height: 56px;
+    background-color: $text-background;
+    border-radius: 14px;
+    box-shadow: 0 0 6px rgba($text-background, 0.5);
+    transition: transform 0.4s ease-in-out;
+  }
+
+  &__radio-btn:nth-child(1).active ~ &__indicator {
+    transform: translateX(0);
+  }
+
+  &__radio-btn:nth-child(2).active ~ &__indicator {
+    transform: translateX(calc(150px + 4px));
+  }
+
+  &__radio-btn:nth-child(3).active ~ &__indicator {
+    transform: translateX(calc(2 * (150px + 4px)));
+  }
+}

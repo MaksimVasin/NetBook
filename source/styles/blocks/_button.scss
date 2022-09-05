@@ -3,13 +3,13 @@
   font-size: 12px;
   color: #fff;
   cursor: pointer;
-  background-color: #217bf4;
-  border: 1px solid #217bf4;
+  background-color: $text-background;
+  border: 1px solid $text-background;
   border-radius: 14px;
   transition: background-color 0.4s linear, color 0.4s linear;
 }
 
 .btn:hover {
-  color: #217bf4;
+  color: $text-background;
   background-color: #fff;
 }

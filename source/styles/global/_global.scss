@@ -1,3 +1,9 @@
+$text-auto: #656464;
+$text-main: #0a093d;
+$text-background: #217bf4;
+$border-color: #e5e5e5;
+$card-link: #4a4a56;
+
 *,
 *::after,
 *::before {
@@ -5,11 +11,11 @@
 }
 
 a:link {
-  color: #656464;
+  color: $text-auto;
 }
 
 a:visited {
-  color: #656464;
+  color: $text-auto;
 }
 
 body {
@@ -17,7 +23,7 @@ body {
   font-size: 14px;
   font-style: normal;
   font-weight: 600;
-  color: #656464;
+  color: $text-auto;
   background-color: #fff;
 }
 
@@ -65,4 +71,10 @@ p {
   max-width: 1226px;
   padding: 0 30px;
   margin: 0 auto;
+}
+
+svg path {
+  fill: inherit;
+  stroke: inherit;
+  stroke-width: inherit;
 }

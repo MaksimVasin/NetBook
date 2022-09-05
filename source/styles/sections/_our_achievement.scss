@@ -1,0 +1,111 @@
+.our-achievement {
+  min-height: 490px;
+  margin-top: 95px;
+
+  &__inner {
+    display: flex;
+  }
+
+  &__card {
+    width: 30%;
+    padding: 44px;
+    margin-right: 26px;
+    border: 1px solid $border-color;
+    border-radius: 10px;
+    transition: box-shadow 0.3s linear;
+  }
+
+  &__card:hover {
+    box-shadow: 0 0 20px $border-color;
+  }
+
+  &__card:last-child {
+    margin-right: 0;
+  }
+
+  &__text-content {
+    width: 40%;
+    padding: 9px 9px 9px 64px;
+  }
+
+  &__card-title {
+    position: relative;
+    margin-left: 36px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 20px;
+    color: #000;
+  }
+
+  &__card-title::after {
+    position: absolute;
+    bottom: -3px;
+    left: -39px;
+    width: 30px;
+    height: 30px;
+    content: "";
+  }
+
+  &__card-title_rating::after {
+    background: url("../../img/icon-star.svg") no-repeat;
+  }
+
+  &__card-title_awwards::after {
+    background: url("../../img/icon-trophy.svg") no-repeat;
+  }
+
+  &__card-subtitle {
+    margin-top: 38px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 18px;
+    color: $text-auto;
+
+    span {
+      color: $text-background;
+    }
+  }
+
+  &__text {
+    margin-top: 42px;
+    margin-bottom: 36px;
+  }
+
+  &__card-link {
+    position: relative;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 16px;
+    color: $card-link;
+    transition: color 0.3s linear;
+  }
+
+  &__card:hover > &__card-link {
+    color: $text-background;
+  }
+
+  .arrow {
+    position: relative;
+  }
+
+  &__card-link:hover + .arrow {
+    left: 6px;
+  }
+
+  .arrow path {
+    stroke: $card-link;
+    transition: stroke 0.3s linear;
+  }
+
+  &__card:hover > .arrow path {
+    stroke: $text-background;
+  }
+
+  &__btn {
+    padding: 20px 40px;
+    margin-top: 37px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 14px;
+  }
+}
