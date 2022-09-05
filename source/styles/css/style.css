@@ -752,4 +752,29 @@ svg path {
   -webkit-transform: translateX(calc(2 * (150px + 4px)));
           transform: translateX(calc(2 * (150px + 4px)));
 }
+
+.cta {
+  position: relative;
+  min-height: 560px;
+  overflow: hidden;
+  background: #e2efff url("../../img/mobile-muckup.png") no-repeat fixed right calc(50% - 340px) bottom -250px;
+  background-color: #e2efff;
+  background-size: 440px 734px;
+}
+
+.cta__inner .text-content {
+  max-width: 355px;
+}
+
+.cta__text-content {
+  margin-top: 122px;
+}
+
+.cta__links {
+  margin-top: 40px;
+}
+
+.cta__link:first-child {
+  margin-right: 10px;
+}
 /*# sourceMappingURL=style.css.map */

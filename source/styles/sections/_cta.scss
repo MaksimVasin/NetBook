@@ -1,0 +1,24 @@
+.cta {
+  position: relative;
+  min-height: 560px;
+  overflow: hidden;
+  background: $background-color url("../../img/mobile-muckup.png") no-repeat fixed right calc(50% - 340px) bottom -250px;
+  background-color: $background-color;
+  background-size: 440px 734px;
+
+  &__inner .text-content {
+    max-width: 355px;
+  }
+
+  &__text-content {
+    margin-top: 122px;
+  }
+
+  &__links {
+    margin-top: 40px;
+  }
+
+  &__link:first-child {
+    margin-right: 10px;
+  }
+}
