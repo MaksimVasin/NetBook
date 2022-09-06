@@ -1,0 +1,128 @@
+.footer {
+  background-color: #2b2b39;
+
+  &__inner {
+    display: flex;
+    padding: 78px 0;
+  }
+
+  &__menu {
+    display: flex;
+    width: 75%;
+  }
+
+  &__menu-item {
+    width: calc(25% - 50px);
+    margin-right: 50px;
+  }
+
+  &__subtitle {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-family: 'Inter';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2em;
+    color: #fff;
+  }
+
+  &__link a {
+    font-family: 'Inter';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 46px;
+    color: #e7e7e7;
+    letter-spacing: 0.0125em;
+  }
+}
+
+.subscribe-block {
+  width: 25%;
+
+  &__title {
+    max-width: 180px;
+  }
+
+  &__text {
+    font-family: 'Inter';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.6em;
+    color: #e7e7e7;
+  }
+}
+
+.subscribe-form {
+  position: relative;
+  height: 48px;
+  margin-top: 30px;
+
+  &__input {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 16px 120px 16px 24px;
+    color: #717179;
+    background-color: inherit;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    outline: none;
+  }
+
+  &__btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 16px 24px;
+    font-family: 'Inter';
+    font-weight: 500;
+    cursor: pointer;
+    background-color: #fff;
+    border: none;
+    border-radius: 10px;
+  }
+}
+
+.footer-buttom {
+  background-color: #20202d;
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 21px 0;
+  }
+
+  &__social ul {
+    display: flex;
+  }
+
+  &__social-link {
+    display: block;
+    width: 36px;
+    height: 36px;
+  }
+
+  &__social-item {
+    margin-left: 8px;
+  }
+}
+
+.twitter {
+  background: url("../../img/icon-twitter.svg") no-repeat;
+}
+
+.instagram {
+  background: url("../../img/icon-instagram.svg") no-repeat;
+}
+
+.facebook {
+  background: url("../../img/icon-facebook.svg") no-repeat;
+}
+
+.linkedin {
+  background: url("../../img/icon-linkedin.svg") no-repeat;
+}

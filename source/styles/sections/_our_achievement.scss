@@ -1,3 +1,8 @@
+.arrow path {
+  stroke: $card-link;
+  transition: stroke 0.3s linear;
+}
+
 .our-achievement {
   min-height: 490px;
   margin-top: 95px;
@@ -80,6 +85,7 @@
     transition: color 0.3s linear;
   }
 
+  &__card-link:hover,
   &__card:hover > &__card-link {
     color: $text-background;
   }
@@ -90,11 +96,6 @@
 
   &__card-link:hover + .arrow {
     left: 6px;
-  }
-
-  .arrow path {
-    stroke: $card-link;
-    transition: stroke 0.3s linear;
   }
 
   &__card:hover > .arrow path {
