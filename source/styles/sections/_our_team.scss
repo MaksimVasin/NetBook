@@ -1,31 +1,76 @@
 .our-team {
   padding-top: 10px;
   margin-top: 108px;
-  margin-bottom: 130px;
+  margin-bottom: 100px;
+
+  &__container {
+    position: relative;
+    overflow-x: hidden;
+  }
 
   &__members-list {
+    position: relative;
+    right: 0;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-center;
     margin-top: 44px;
+    transition: right 0.3s ease-in-out;
+  }
+
+  &__btn-forth,
+  &__btn-back {
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    content: "";
+    background-color: inherit;
+    border: none;
+    border-radius: 50%;
+    opacity: 0.7;
+    transition: opacity 0.3 linear;
+  }
+
+  &__btn-back {
+    left: 10px;
+  }
+
+  &__btn-forth {
+    right: 10px;
+
+    .arrow-btn {
+      transform: rotate(180deg);
+    }
+  }
+
+  &__btn-forth:hover,
+  &__btn-back:hover {
+    opacity: 0.9;
+  }
+
+  &__btn-forth:disabled,
+  &__btn-back:disabled {
+    opacity: 0.4;
   }
 
   &__members-item {
-    width: 23.2%;
+    width: calc(25% - 20px * 3 / 4);
+    min-width: 240px;
     padding: 30px;
-    margin-right: calc(7.2% / 3);
+    margin: 0 10px 30px;
     text-align: center;
     border: 2px solid rgba(#f3f3f3, 0.5);
     border-radius: 10px;
     transition: box-shadow 0.3s linear;
   }
 
-  &__members-item:nth-child(4n) {
-    margin-right: 0;
+  &__members-item:first-child {
+    margin-left: 10px;
   }
 
   &__members-item:hover {
-    box-shadow: 0 34px 68px rgba(116, 115, 128, 0.1);
+    box-shadow: 0 10px 20px rgba(116, 115, 128, 0.163);
   }
 
   &__img-item {
@@ -149,5 +194,12 @@
 
   &__radio-btn:nth-child(3).active ~ &__indicator {
     transform: translateX(calc(2 * (150px + 4px)));
+  }
+
+  /* Portrait tablets and medium desktops */
+  @media (min-width: 992px) and (max-width: 1199px) {
+    .container {
+      max-width: 900px;
+    }
   }
 }

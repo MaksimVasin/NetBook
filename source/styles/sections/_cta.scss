@@ -21,4 +21,9 @@
   &__link:first-child {
     margin-right: 10px;
   }
+
+  /* Portrait tablets and medium desktops */
+  @media (max-width: 1199px) {
+    background-position: right calc(50% - 190px) bottom -250px;
+  }
 }

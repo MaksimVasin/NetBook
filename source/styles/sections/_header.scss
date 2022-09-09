@@ -96,7 +96,7 @@
   }
 
   &__image {
-    margin-top: 77px;
+    margin-top: 10%;
   }
 
   &__info {
@@ -139,5 +139,12 @@
 
   &__btn-content_first {
     margin-right: 12px;
+  }
+
+  /* Portrait tablets and medium desktops */
+  @media (min-width: 992px) and (max-width: 1199px) {
+    &__image {
+      margin-top: 40%;
+    }
   }
 }

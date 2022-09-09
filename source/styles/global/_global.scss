@@ -11,6 +11,10 @@ $background-color: #e2efff;
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+}
+
 a:link {
   color: $text-auto;
 }
@@ -36,14 +40,14 @@ img {
 .visually-hidden {
   position: absolute;
   bottom: 0;
-  overflow: hidden;
-  margin: -1px;
-  border: 0;
-  padding: 0;
   width: 1px;
   height: 1px;
-  white-space: nowrap;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
   clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
 }
 
 li {
@@ -51,12 +55,8 @@ li {
 }
 
 ul {
-  margin: 0;
   padding-left: 0;
-}
-
-a {
-  text-decoration: none;
+  margin: 0;
 }
 
 h1,
@@ -72,6 +72,13 @@ p {
   max-width: 1226px;
   padding: 0 30px;
   margin: 0 auto;
+}
+
+/* Portrait tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .container {
+    max-width: 900px;
+  }
 }
 
 svg path {

@@ -1,5 +1,6 @@
 .blog {
   padding-bottom: 130px;
+  overflow: hidden;
 
   &__text-content {
     margin-top: 126px;
@@ -13,7 +14,8 @@
   &__list {
     position: relative;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
 
   &__list::after {
@@ -39,7 +41,8 @@
   }
 
   &__list-item {
-    width: 29%;
+    width: 30%;
+    min-width: 340px;
   }
 
   &__img {
@@ -78,5 +81,16 @@
 
   &__link:hover + .arrow path {
     stroke: $text-background;
+  }
+
+  /* Portrait tablets and medium desktops */
+  @media (min-width: 992px) and (max-width: 1199px) {
+    &__list-item {
+      margin-bottom: 50px;
+    }
+
+    &__list-item:last-child {
+      margin-bottom: 0;
+    }
   }
 }

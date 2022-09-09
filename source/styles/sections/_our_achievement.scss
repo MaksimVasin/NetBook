@@ -4,15 +4,16 @@
 }
 
 .our-achievement {
-  min-height: 490px;
+  padding-bottom: 110px;
   margin-top: 95px;
 
   &__inner {
     display: flex;
+    flex-wrap: wrap;
   }
 
   &__card {
-    width: 30%;
+    width: calc(30% - 26px);
     padding: 44px;
     margin-right: 26px;
     border: 1px solid $border-color;
@@ -108,5 +109,23 @@
     font-size: 14px;
     font-weight: 500;
     line-height: 14px;
+  }
+
+  /* Portrait tablets and medium desktops */
+  @media (max-width: 1199px) {
+    &__card {
+      width: calc(50% - 26px / 2);
+    }
+
+    &__card:nth-child(2) {
+      margin-right: 0;
+    }
+
+    &__text-content {
+      width: 70%;
+      margin-top: 40px;
+      margin-left: auto;
+      text-align: end;
+    }
   }
 }
